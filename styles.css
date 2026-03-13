@@ -1,0 +1,190 @@
+:root {
+    --color-background: #eff0f0;
+    --color-foreground: #0c0e12;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 9rem;
+    width: auto;
+}
+
+nav h1 {
+    margin: auto;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#logo-image {
+    height: 10rem;
+    width: auto;
+}
+
+#menu-image {
+    height: 1rem;
+    width: 2rem;
+    margin: auto 1rem auto auto;
+}
+
+#Main-Title {
+    padding: auto;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(0deg,
+    color-mix(in srgb, #2f4d30, var(--color-background) 99%),
+    color-mix(in srgb, #2f4d30, var(--color-background) 95%));
+}
+
+#Main-Title h2{
+    margin-top: 0;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: color-mix(in srgb, #ca7f15, var(--color-foreground) 20%);
+}
+
+#Main-Title p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+    height: 40rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer img{
+    width: auto;
+    height: auto;
+}
+
+#Star-Rating {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.stars {
+  margin-top: 0.25rem;
+  font-size: 1.5rem;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/*
+#Main-Title {
+    background-image: url('./images/Work1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 100%;
+}
+*/
