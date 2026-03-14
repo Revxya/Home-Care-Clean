@@ -1,64 +1,70 @@
 :root {
-    --color-background: #eff0f0;
-    --color-foreground: #0c0e12;
+  --color-background: #eff0f0;
+  --color-foreground: #0c0e12;
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Inter', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 nav {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    height: 9rem;
-    width: auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 9rem;
+  width: auto;
 }
 
 nav h1 {
-    margin: auto;
-    font-size: 1.5rem;
-    color: gray;
+  margin: auto;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+nav a {
+  margin: auto; 
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #logo-image {
-    height: 10rem;
-    width: auto;
+  height: 10rem;
+  width: auto;
 }
 
 #menu-image {
-    height: 1rem;
-    width: 2rem;
-    margin: auto 1rem auto auto;
+  height: 1rem;
+  width: 2rem;
+  margin: auto 1rem auto auto;
 }
 
 #Main-Title {
-    padding: auto;
-    height: auto;
-    width: 100%;
-    background: linear-gradient(0deg,
-    color-mix(in srgb, #2f4d30, var(--color-background) 99%),
-    color-mix(in srgb, #2f4d30, var(--color-background) 95%));
+  padding: auto;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(0deg,
+  color-mix(in srgb, #2f4d30, var(--color-background) 99%),
+  color-mix(in srgb, #2f4d30, var(--color-background) 95%));
 }
 
 #Main-Title h2{
-    margin-top: 0;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    color: color-mix(in srgb, #ca7f15, var(--color-foreground) 20%);
+  margin-top: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: color-mix(in srgb, #ca7f15, var(--color-foreground) 20%);
 }
 
 #Main-Title p{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.5rem;
-    font-weight: 200;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 * {box-sizing:border-box}
@@ -77,7 +83,7 @@ nav h1 {
 }
 
 .mySlides img {
-    height: 40rem;
+  height: 40rem;
 }
 
 /* Next & previous buttons */
@@ -155,21 +161,21 @@ nav h1 {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer img{
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 #Star-Rating {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .stars {
@@ -188,3 +194,26 @@ footer img{
     width: 100%;
 }
 */
+
+
+/*Contact Page*/
+#Outer-Border {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+
+
+.Contact-HTML {
+  margin: auto;
+  width: 100%;
+  border: 4rem solid rgba(248,224,214,0.8);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
