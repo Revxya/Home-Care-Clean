@@ -1,5 +1,4 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+slideIndex = 1
 
 // Next/previous controls
 function plusSlides(n) {
@@ -23,6 +22,12 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 }
+
+function main() {
+  showSlides(slideIndex);
+}
+
+window.addEventListener("DOMContentLoaded", main);

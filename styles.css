@@ -55,25 +55,28 @@ nav a {
 
 #Main-Title h2{
   margin-top: 0;
-  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 1rem;
   color: color-mix(in srgb, #ca7f15, var(--color-foreground) 20%);
 }
 
 #Main-Title p{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-size: 1.5rem;
   font-weight: 200;
+  margin-top: 0;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 80%;
+  max-width: 100%;
   position: relative;
-  margin: auto;
+  margin: 1rem 1rem 1rem 1rem;
   
 }
 
@@ -82,8 +85,14 @@ nav a {
   display: none;
 }
 
-.mySlides img {
-  height: 40rem;
+.imageSection {
+  width: 45%;
+  margin: auto;
+}
+
+.imageSection img {
+  height: 30rem;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -115,10 +124,9 @@ nav a {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
