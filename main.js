@@ -26,8 +26,25 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function addEvents() {
+  let burger = document.getElementById("menu-image");
+  let overlay = document.getElementById("overlayMenu");
+
+  burger.addEventListener('click', () => {
+    overlay.style.display = 'flex';
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = 'none';
+    }
+  });
+
+}
+
 function main() {
   showSlides(slideIndex);
+  addEvents();
 }
 
 window.addEventListener("DOMContentLoaded", main);
