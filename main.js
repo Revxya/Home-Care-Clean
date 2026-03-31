@@ -1,4 +1,6 @@
 slideIndex = 1
+let touchStartX = 0;
+let touchEndX = 0;
 
 // Next/previous controls
 function plusSlides(n) {
@@ -26,9 +28,35 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function handleSwipe() {
+  const swipeDistance = touchEndX - touchStartX;
+
+  // Minimum distance to count as swipe
+  if (Math.abs(swipeDistance) < 50) return;
+
+  if (swipeDistance < 0) {
+    // Swipe left → next slide
+    plusSlides(1);
+  } else {
+    // Swipe right → previous slide
+    plusSlides(-1);
+  }
+}
+
 function addEvents() {
   let burger = document.getElementById("menu-image");
   let overlay = document.getElementById("overlayMenu");
+  let slider = document.querySelector(".slideshow-container");
+
+  slider.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
 
   burger.addEventListener('click', () => {
     overlay.style.display = 'flex';
