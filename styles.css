@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 :root {
   --color-background: #eff0f0;
   --color-foreground: #0c0e12;
+}
+
+body, html {
+	width: 100%;
+	overflow-x: hidden;
+  min-height: 100%;
 }
 
 html {
@@ -50,12 +55,13 @@ nav a {
 }
 
 #Main-Title {
-  padding: auto;
+  min-height: 100dvh;
   height: auto;
   width: 100%;
   background: linear-gradient(0deg,
   color-mix(in srgb, #2f4d30, var(--color-background) 99%),
   color-mix(in srgb, #2f4d30, var(--color-background) 95%));
+  padding-bottom: 1rem;
 }
 
 #Main-Title h2{
@@ -128,8 +134,10 @@ nav a {
 }
 
 .imageSection img {
-  height: 30rem;
   width: 100%;
+  height: auto;
+  max-height: 75dvh;
+  object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -298,6 +306,10 @@ footer img{
 
   .mainHeader {
     display: none;
+  }
+
+  .slideshow-container {
+    margin-bottom: -1rem;
   }
 }
 
