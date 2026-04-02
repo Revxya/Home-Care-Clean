@@ -48,6 +48,9 @@ function addEvents() {
   let overlay = document.getElementById("overlayMenu");
   let slider = document.querySelector(".slideshow-container");
 
+
+
+
   slider.addEventListener("touchstart", (e) => {
     touchStartX = e.changedTouches[0].screenX;
   });

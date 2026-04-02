@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- <script>
+  emailjs.init('SwcTgAnpiF9FzPzBe');
+
+  emailjs.send('service_n95gjhb', 'template_k0k9f9s', {
+    message: 'Hello!'
+  }).then(console.log);
+</script>
+ -->
+
 <body class="contactPage">
     <div id="Outer-Border">
         <div id="Inner-Content-Left">
@@ -18,31 +30,42 @@
         </div>
 
         <div id="Inner-Content-Right">
+            <form id="contactForm">
             <div id="customer-name">
                 <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text">
                 </div>
                 <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text">
                 </div>
             </div>
 
             <div id="customer-email">
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="text" id="email">
+                    <label for="customerEmail">Email *</label>
+                    <input id="customerEmail" type="text">
                 </div>
             </div>
 
             <div id="customer-message">
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <input type="text" id="message">
+                    <label for="customerMessage">Message</label>
+                    <input id="customerMessage" type="text">
                 </div>
             </div>
+
+            <div>
+                <div class="form-group">
+                    <button id="submitForm" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
         </div>
     </div>
+
+    <script src="emailTest.js"></script>
+
 </body>
 </html>
