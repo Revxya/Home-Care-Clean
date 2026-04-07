@@ -244,7 +244,7 @@ footer img{
 
 
 /*Contact Page*/
-#Outer-Border {
+#Contact-Content {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -252,6 +252,7 @@ footer img{
   align-items: center;
   height: 50rem;
   padding: 2rem 2rem;
+  background-color: rgba(248,224,214,1);
 }
 
 #Inner-Content-Left {
@@ -262,25 +263,10 @@ footer img{
   width: 50%;
 }
 
-.Contact-HTML {
-  margin: auto;
-  width: 100%;
-  border: 4rem solid rgba(248,224,214,0.8);
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
 }
-
-.Contact-HTML body {
-  background-color: rgba(248,224,214,1);
-}
-
 
 /*Screen Resolutions*/
 
@@ -328,29 +314,27 @@ footer img{
 }
 
 @media (orientation: portrait) and (max-width: 1200px) and (pointer: coarse){
-  .contactPage{
+
+  #Contact-Content {
     height: auto;
+    flex-direction: column;
+    align-items: baseline;
+    min-height: 85dvh;
   }
 
-  .Contact-HTML {
-    height: 100%;
-    border: 2rem solid rgba(248,224,214,0.8);
+  #Inner-Content-Left {
+    width: 100%;
   }
 
-  #Outer-Border {
-    height: auto;
+  #Inner-Content-Right {
+    width: 100%;
   }
-
 
 } 
 
 @media (orientation: landscape) and (max-width: 1200px) and (pointer: coarse){
-  .Contact-HTML {
-    height: 100%;
-    border: 1rem solid rgba(248,224,214,0.8);
-  }
 
-  #Outer-Border {
+  #Contact-Content {
     height: auto;
   }
 } 

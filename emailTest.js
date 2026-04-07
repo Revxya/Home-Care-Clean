@@ -1,5 +1,4 @@
 
-
 emailjs.init("SwcTgAnpiF9FzPzBe");
 
 
@@ -25,3 +24,24 @@ window.onload = function() {
             });
     });
 };
+
+function addEvents() {
+    let burger = document.getElementById("menu-image");
+    let overlay = document.getElementById("overlayMenu");
+
+    burger.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+}
+
+function main() {
+    addEvents();
+}
+
+main();
