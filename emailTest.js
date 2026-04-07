@@ -44,4 +44,4 @@ function main() {
     addEvents();
 }
 
-main();
+window.addEventListener("DOMContentLoaded", main);
