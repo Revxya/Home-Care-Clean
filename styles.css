@@ -245,18 +245,27 @@ footer img{
 
 /*Contact Page*/
 #Contact-Content {
-  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 50rem;
   padding: 2rem 2rem;
-  background-color: rgba(248,224,214,1);
+  background: linear-gradient(0deg,
+  color-mix(in srgb, #2f4d30, var(--color-background) 99%),
+  color-mix(in srgb, #2f4d30, var(--color-background) 95%));
+}
+
+#customer-name {
+  margin-bottom: 1rem;
 }
 
 #Inner-Content-Left {
   width: 50%;
+}
+
+#Inner-Content-Left h1 {
+  color:  color-mix(in srgb, #ca7f15, var(--color-foreground) 20%);
 }
 
 #Inner-Content-Right {
@@ -266,6 +275,11 @@ footer img{
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+#customerMessage {
+  height: 15dvh;
 }
 
 /*Screen Resolutions*/
