@@ -278,8 +278,26 @@ footer img{
   margin-bottom: 0.5rem;
 }
 
+.form-group label {
+  padding-bottom: 0.2rem;
+}
+
+.form-group input {
+  border-radius: 0.5rem;
+  height: 2rem;
+}
+
+.form-group button {
+  border-radius: 0.5rem;
+  height: 2rem;
+}
+
 #customerMessage {
   height: 15dvh;
+}
+
+#customer-submit {
+  margin-left: 50%;
 }
 
 /*Screen Resolutions*/
@@ -316,11 +334,22 @@ footer img{
 }
 
 @media (max-width: 680px) {
-	
+	#Contact-Content {
+    flex-direction: column;
+  }
+
+  #Inner-Content-Left {
+    width: 100%;
+  }
+
+  #Inner-Content-Right {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 1200px) {
-	
+
 }
 
 @media (max-height: 500px) {
