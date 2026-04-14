@@ -11,6 +11,7 @@ body, html {
 	width: 100%;
 	overflow-x: hidden;
   min-height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 html {
@@ -144,11 +145,11 @@ nav a {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   background-color: rgba(128, 128, 128, 0.582);
   padding: 0.3rem 0.8rem 0.45rem 0.8rem;
   border-radius: 50%;
-  margin-top: -1rem;
+  margin: -1rem;
   transition: 0.6s ease;
   user-select: none;
 }
@@ -167,9 +168,9 @@ nav a {
 /* Caption text */
 .text {
   color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  bottom: 8px;
+  font-size: 1rem;
+  padding: 0.8rem 0.2rem;
+  bottom: 0.5rem;
   width: 100%;
   text-align: center;
 }
@@ -371,6 +372,14 @@ footer img{
 
   #Inner-Content-Right {
     width: 100%;
+  }
+
+  .imageSection {
+    width: 95%;
+  }
+
+  .imageSection img {
+    max-height: 17.5rem;
   }
 
 } 
