@@ -25,7 +25,7 @@ body {
 }
 
 #landingPageImage {
-  height: auto;
+  height: 28rem;
   width: 100%;
 }
 
@@ -380,7 +380,9 @@ footer img{
 }
 
 @media (max-width: 1200px) {
-
+  #Inner-Content-Left p {
+    margin-right: 1rem;
+  }
 }
 
 @media (max-height: 500px) {
@@ -412,6 +414,14 @@ footer img{
     max-height: 17.5rem;
   }
 
+  #landingPageImage {
+    height: 24rem;
+  }
+
+  #landingPageImage img {
+    height: 24rem;
+  }
+
 } 
 
 @media (orientation: landscape) and (max-width: 1200px) and (pointer: coarse){
@@ -422,10 +432,28 @@ footer img{
 } 
 
 @media (max-width: 930px) {
+  nav {
+    background: none;
+    backdrop-filter: none;
+  }
 
+  .mainHeader {
+    display: none;
+  }
+
+  #menu-image {
+    height: 1.5rem;
+    width: 2.5rem;
+  }
 }
 
 @media (min-width: 1201px) {
+  #Main-Title{
+    padding: 0rem 10rem;
+  }
 
+  #Contact-Content {
+    padding: 0rem 10rem;
+  }
 }
 
