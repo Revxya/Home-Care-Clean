@@ -203,6 +203,7 @@ nav a {
   bottom: 0.5rem;
   width: 100%;
   text-align: center;
+  
 }
 
 /* The dots/bullets/indicators */
@@ -243,6 +244,14 @@ footer img{
   height: auto;
   object-fit: contain;
   min-height: 5dvh;
+}
+
+footer p {
+  margin: 0.15rem 0;
+}
+
+.space {
+  margin-bottom: 1rem;
 }
 
 #Star-Rating {
