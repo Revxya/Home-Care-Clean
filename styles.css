@@ -368,9 +368,25 @@ footer p {
     display: none;
   }
 
-  .slideshow-container {
-    margin-bottom: -1rem;
+  /* .slideshow-container {
+  } */
+
+  #Main-Title h2 {
+    padding-left: 1rem;
   }
+
+  #Main-Title p {
+    padding-left: 1rem;
+  }
+
+  .prev {
+    left: -1rem;
+  }
+
+  .next {
+    right: -1rem;
+  }
+
 }
 
 @media (max-width: 680px) {
@@ -391,6 +407,10 @@ footer p {
 @media (max-width: 1200px) {
   #Inner-Content-Left p {
     margin-right: 1rem;
+  }
+
+  #Main-Title{
+    padding: 0rem 2rem;
   }
 }
 
