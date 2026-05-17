@@ -290,10 +290,9 @@ footer p {
   justify-content: center;
   align-items: center;
   height: 50rem;
-  padding: 2rem 2rem;
-  background: linear-gradient(0deg,
-  color-mix(in srgb, #2f4d30, var(--color-background) 99%),
-  color-mix(in srgb, #2f4d30, var(--color-background) 95%));
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(2rem, 4vw, 5rem);
 }
 
 #customer-name {
@@ -468,8 +467,5 @@ footer p {
 @media (min-width: 1201px) {
   
 
-  #Contact-Content {
-    padding: 0rem 10rem;
-  }
 }
 
