@@ -74,6 +74,24 @@ nav a {
   cursor: pointer;
 }
 
+.underline {
+  display:inline-block; 
+  margin:0;
+}
+
+.underline::after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px greenyellow;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
 #logo-image {
   height: auto;
   width: auto;
@@ -414,6 +432,10 @@ footer p {
     flex-direction: column;
     align-items: baseline;
     min-height: 85dvh;
+  }
+
+  #Main-Title h2 {
+    font-size: 1.35rem;
   }
 
   #Inner-Content-Left {
