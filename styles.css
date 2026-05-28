@@ -60,36 +60,30 @@ nav {
   z-index: 1000;
 }
 
-nav h1 {
-  margin: auto;
+nav a {
+  margin: 0 6px;
+  padding: 15px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav span {
   font-size: 1.2rem;
   color: black;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(133, 203, 245, 0.4);
-}
-
-nav a {
-  margin: auto; 
-  text-decoration: none;
   cursor: pointer;
 }
 
 .underline {
-  display:inline-block; 
-  margin:0;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
 }
 
-.underline::after {
-  display: block;
-  content: '';
-  border-bottom: solid 3px greenyellow;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
-}
-
-.underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: center;
+.underline:hover {
+  border-bottom: 5px solid greenyellow;
 }
 
 #logo-image {
