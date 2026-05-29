@@ -53,16 +53,16 @@ nav {
   position: fixed;
   display: flex;
   text-align: center;
+  justify-content: flex-end;
   right: 0;
   top: 0;
   height: 6rem;
-  width: 50%;
   z-index: 1000;
 }
 
 nav a {
-  margin: 0 6px;
-  padding: 15px 0;
+  margin: 0 1rem;
+  padding: 1rem 0;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ nav span {
 #menu-image {
   height: 1rem;
   width: 2rem;
-  margin: auto 1rem auto auto;
+  margin: auto 2rem auto 1rem;
 }
 
 .section {
