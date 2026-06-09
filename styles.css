@@ -179,7 +179,7 @@ nav span {
 .imageSection img {
   width: 100%;
   height: auto;
-  max-height: 35dvh;
+  max-height: 25dvh;
   object-fit: cover;
 }
 
@@ -215,7 +215,7 @@ nav span {
   bottom: 0.5rem;
   width: 100%;
   text-align: center;
-  
+  min-height: 15dvh;
 }
 
 /* The dots/bullets/indicators */
